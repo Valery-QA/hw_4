@@ -23,7 +23,7 @@ def test_rectangle():
     a = 10
     b = 20
     # TODO сосчитайте периметр
-    perimeter = ((a + b)*2)
+    perimeter = ((a + b) * 2)
 
     assert perimeter == 60
 
@@ -40,7 +40,7 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    area = r**2 * math.pi
+    area = r ** 2 * math.pi
 
     assert area == 1661.9025137490005
 
@@ -55,7 +55,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 (включая обе границы) и отсортируйте его по возрастанию.
     """
     # TODO создайте список
-    l = sorted(random.randint(0,101) for i in range(10))
+    l = sorted(random.randint(0, 101) for i in range(10))
 
     assert len(l) == 10
     assert all(l[i] <= l[i + 1] for i in range(len(l) - 1))
@@ -85,7 +85,6 @@ def test_dicts():
     # TODO создайте словарь
 
     d = dict(zip(first, second))
-
 
     assert isinstance(d, dict)
     assert len(d) == 5
